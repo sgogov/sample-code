@@ -1,0 +1,38 @@
+// 
+// 
+// *** all base colours & tints added here *** //
+// 
+// we can add more shades and even use strongs to label variations as needed
+// 
+$allfonts: (
+    "Avenir Next":(
+        "normal": 500,
+        400: #a8a8a8,
+        500: #a8a8a8,
+        700: #f4f4f4,
+        800: #939393 
+    ),
+    "Avenir Next Cn":(
+        100: #e0c4d9,
+        200: #cc9cc0,
+        300: #b775a7,
+        400: #a34e8e,
+        500: #8f2775,
+        600: #762060,
+        700: #5c194b,
+        800: #411236,
+        900: #270b20,
+        "base":#f6f6f6  
+    ),
+    "Burlingame":(
+        100: #c0d6ca,
+        200: #96bca6,
+        300: #6da183,
+        400: #438660,
+        500: #1a6c3d,
+        600: #165932,
+        700: #134f2d,
+        800: #114527,
+        900: #1e2801,
+    )
+);

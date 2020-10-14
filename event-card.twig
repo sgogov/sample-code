@@ -1,0 +1,24 @@
+<div class="post-type-{{ event.post_type }} event-card" id="event-{{ event.ID }}">
+    {% set postDateFormat = "d M Y" %}
+    {% if(event.custom.monthyear_only is defined and event.custom.monthyear_only == 1) %}
+        {% set postDateFormat = "M Y" %}
+    {% endif %}
+    {#Card Body#}
+    <div class="event-card-body">
+        <div class="event-topic">
+            <span class="badge event-label-category">{{ event.terms('category') | first }}</span>
+            <span class="badge event-label-date">{{ event.get_field('date') | date(postDateFormat) }}</span>
+            <span class="badge event-label-city">
+                {% if 'UK' in event.terms('category') %}{{ 'UK' }}{%endif%}
+                {% if 'US' in event.terms('category') %}{{ 'US'}}{%endif%}
+            </span>
+        </div>
+        <div class="event-title">
+            <a href="{{event.custom.url_for_direct_link ? event.custom.url_for_direct_link : event.link}}">{{event.title}}</a>
+        </div>
+    </div>
+
+    {#Card Footer#}
+    <div class="event-card-footer">
+    </div>
+</div>
