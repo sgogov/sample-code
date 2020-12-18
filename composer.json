@@ -1,0 +1,10 @@
+{
+  "name": "sgogov/sample-code",
+  "type": "project",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Pageant\\": "src/"
+    }
+  }
+}
