@@ -1,6 +1,6 @@
 {
   "name": "sgogov/sample-code",
-  "type": "project",
+  "type": "wordpress-plugin",
   "license": "proprietary",
   "autoload": {
     "psr-4": {
